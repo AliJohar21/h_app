@@ -110,8 +110,9 @@ class _ClockInOutPageWidgetState extends State<ClockInOutPageWidget>
       var checkLong = currentPosition.longitude <= 55.380423 &&
           currentPosition.longitude >= 55.376901;
 
-      if (checkLat && checkLong) {}
-      canClockIn = true;
+      if (checkLat && checkLong) {
+        canClockIn = true;
+      }
     } catch (e, s) {
       print(e);
       print(s);
